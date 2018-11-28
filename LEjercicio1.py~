@@ -21,7 +21,7 @@ minb=np.min(B)
 #print minb,'minb'
 respuesta=True
 for i in range(len(A)):
-	if(A[i]>minb):
+	if(A[i]>b):
 		respuesta=False
 
 if(respuesta==False):
