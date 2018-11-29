@@ -66,7 +66,7 @@ print R_walk, 'R'
 plt.figure()
 plt.plot(x_data,y_data,label='originales')
 plt.plot(R,C)
-plt.show()
+plt.savefig('Ajuste.pdf')
 
 
 

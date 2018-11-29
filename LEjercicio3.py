@@ -19,13 +19,14 @@ y_data=data[:,1]
 
 Rguess= 11.0
 Cguess= 20.0
-
+Lguess=1
 R_walk = np.empty((0))
 C_walk = np.empty((0))
 l_walk = np.empty((0))
 
 R_walk = np.append(R_walk, Rguess)
 C_walk = np.append(C_walk, Cguess)
+l_walk = np.append(C_walk, Lguess)
 
 def X2(y_obs, y_model):
     chi_squared = 0.5*sum((y_obs-y_model)**2)/len(x_data)
@@ -44,6 +45,7 @@ for i in range(n_iterations):
         if(alfa>=1):
         	np.append(C_walk,C)
         	np.append(R_walk,R)
+		
 	 
 	else:
             beta=np.random.random()
