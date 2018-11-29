@@ -39,10 +39,10 @@ def filtro(freq,fourier):
 filtro= filtro(freq,fourier)
 	
 # SU GRAFICA
+plt.figure()
 plt.plot(freq,fourier,label='senal original')
 plt.plot(filtro,fourier,label='senal filtrada')
-plt.legend()
-plt.show()
+plt.savefig('filtro.pdf')
 
 # Puede usar los siguientes paquetes:
 
